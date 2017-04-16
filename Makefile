@@ -11,8 +11,8 @@ update: # Copy all files for hosting to the public directory
 	rm -rf *.xml
 	rm -rf js/ css/
 	rm -rf categories/
-	rm -rf docs/
 	rm -rf tags/
+	rm -rf docs/ coming_soon/
 	cp -r public/* .
 
 help:

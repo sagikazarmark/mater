@@ -2,12 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sagikazarmark.github.io/mater/docs/sample3/</loc>
+    <lastmod>2017-04-16T22:38:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sagikazarmark.github.io/mater/docs/nested/sample2/</loc>
+    <lastmod>2017-04-16T22:11:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sagikazarmark.github.io/mater/docs/sample/</loc>
+    <lastmod>2017-04-16T22:09:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sagikazarmark.github.io/mater/docs/</loc>
+    <lastmod>2017-04-16T20:16:09+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sagikazarmark.github.io/mater/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://sagikazarmark.github.io/mater/docs/</loc>
+    <lastmod>2017-04-16T22:38:09+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sagikazarmark.github.io/mater/</loc>
+    <lastmod>2017-04-16T22:38:09+02:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,7 +6,22 @@ title = "Mater"
     description = "Hugo theme based on Materialize CSS."
     author = "Márk Sági-Kazár"
 
+    [params.header]
+        color = "light-blue lighten-1"
+
+    [params.docs.header]
+        color = "light-blue"
+        subtextColor = ""
+
+    [params.docs.menu]
+        activeColor = "light-blue"
+
 [[menu.main]]
     name = "Github"
     url = "https://github.com/sagikazarmark/mater"
     weight = -200
+
+[[menu.docs]]
+    name = "Nested"
+    identifier = "nested"
+    weight = -100

@@ -1,0 +1,132 @@
+header, main, footer {
+    padding-left: 300px;
+}
+
+// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L208
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L205
+@media only screen and (min-width : 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+nav.top-nav {
+    box-shadow: none;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+    a.page-title {
+        font-size: 48px;
+        line-height: 122px;
+    }
+}
+
+a.button-collapse.top-nav {
+    position: absolute;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    left: 7.5%;
+    top: 0;
+    float: none;
+    margin-left: 1.5rem;
+    color: #fff;
+    font-size: 36px;
+    z-index: 2;
+
+    &.full {
+        line-height: 122px;
+    }
+
+    i {
+        font-size: 32px;
+    }
+}
+
+// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L207
+@media only screen and (max-width : 600px) {
+    a.button-collapse.top-nav {
+        left: 5%;
+    }
+}
+
+// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L208
+@media only screen and (max-width : 992px) {
+    nav .nav-wrapper {
+        text-align: center;
+
+        a.page-title {
+            font-size: 36px;
+        }
+    }
+}
+
+ul.side-nav.fixed li.logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 80px;
+
+    &:hover,
+    #logo-container:hover {
+        background-color: transparent;
+    }
+}
+
+ul.side-nav.fixed {
+    overflow: hidden;
+
+    li {
+        line-height: 44px;
+
+        &.active {
+            background-color: rgba(0, 0, 0, .05);
+        }
+
+        a {
+            font-size: 13px;
+            line-height: 44px;
+            height: 44px;
+            padding: 0 30px;
+        }
+    }
+
+    ul.collapsible-accordion {
+        background-color: #FFF;
+
+        a.collapsible-header {
+            padding: 0 30px;
+        }
+
+        .collapsible-body li a {
+            font-weight: 400;
+            padding: 0 37.5px 0 45px;
+        }
+    }
+
+    &:hover {
+        overflow-y: auto;
+    }
+}
+
+.bold > a {
+    font-weight: bold;
+}
+
+#logo-container {
+    height: 57px;
+    margin-bottom: 32px;
+}
+
+#front-page-logo {
+    display: inline-block;
+    height: 100%;
+    pointer-events: none;
+}

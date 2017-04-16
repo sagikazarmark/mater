@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ block "head" . }}{{ end }}
+    <link href="css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav {{ .Site.Params.Docs.Header.Color | default "light-blue" }}">
+            <div class="container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
+                {{ if .Params.subtitle }}
+                    <div class="row">
+                        <div class="col s12 m9">
+                            <h1 class="header center-on-small-only">{{ .Title }}</h1>
+                            <h4 class="light {{ .Site.Params.Docs.Header.SubtextColor | default "blue-text text-lighten-4" }} center-on-small-only">{{ .Params.Subtitle }}</h4>
+                        </div>
+                    </div>
+                {{ else }}
+                    <div class="nav-wrapper"><a class="page-title">{{ .Title }}</a></div>
+                {{ end }}
+            </div>
+        </nav>
+
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="{{ .Site.BaseURL }}" class="brand-logo">{{ .Site.Title }}</a>
+            </li>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.docs }}
+                {{ if .HasChildren }}
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold">
+                                <a class="collapsible-header{{ if $currentPage.HasMenuCurrent "docs" . }} active{{ end }} waves-effect waves-yellow">{{ .Pre }} {{ .Name }}</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        {{ range .Children }}
+                                            <li{{ if $currentPage.IsMenuCurrent "docs" . }} class="active {{ $.Site.Params.Docs.Menu.ActiveColor }}"{{ end }}>
+                                                <a href="{{ .URL }}" class="waves-effect waves-yellow">
+                                                    {{ .Pre }}
+                                                    <span>{{ .Name }}</span>
+                                                </a>
+                                            </li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                {{ else }}
+                    <li class="bold{{ if $currentPage.IsMenuCurrent "docs" . }} active{{ end }}">
+                        <a href="{{ .URL }}" class="waves-effect waves-yellow">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </header>
+
+    {{ block "main" . }}
+        <main>
+            <div class="page container">
+                <div class="row">
+                    <div class="col s12 m9 l10">
+                        <div class="section">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    {{ end }}
+
+    {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ partial "foot/scripts.html" . }}
+    <script src="js/docs.js"></script>
+</body>
+</html>

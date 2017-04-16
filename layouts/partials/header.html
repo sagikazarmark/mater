@@ -1,0 +1,13 @@
+<nav class="{{- .Site.Params.Header.Color | default "light-blue lighten-1" -}}" role="navigation">
+    <div class="nav-wrapper container">
+        {{ partial "header/brand.html" . }}
+        <ul class="right hide-on-med-and-down">
+            {{ partial "header/menu.html" . }}
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            {{ partial "header/menu.html" . }}
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>

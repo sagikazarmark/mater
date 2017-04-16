@@ -1,0 +1,12 @@
+baseURL = "https://sagikazarmark.github.io/mater/"
+languageCode = "en"
+title = "Mater"
+
+[params]
+    description = "Hugo theme based on Materialize CSS."
+    author = "Márk Sági-Kazár"
+
+[[menu.main]]
+    name = "Github"
+    url = "https://github.com/sagikazarmark/mater"
+    weight = -200

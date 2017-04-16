@@ -1,0 +1,5 @@
+{{- if isset .Params "author" -}}
+    <meta name="author" content="{{ index .Params "author" }}">
+{{- else -}}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{- end -}}

@@ -1,0 +1,5 @@
+{{- if .Description -}}
+    <meta name="description" content="{{ .Description }}">
+{{- else -}}
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{- end -}}

@@ -17,6 +17,11 @@ $ curl -L https://github.com/sagikazarmark/mater/archive/master.tar.gz | tar xz 
 The above script should work for upgrading too, but make sure upgrade does not screw up anything.
 
 
+## Credits
+
+This theme is based on the [Starter Template](http://materializecss.com/templates/starter-template/preview.html) found on [Materialize CSS](http://materializecss.com/getting-started.html#templates) website.
+
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.

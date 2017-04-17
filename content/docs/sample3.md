@@ -1,10 +1,10 @@
-+++
-title = "Sample3"
-subtitle = "Sample3 with subtitle"
-description = "Sample3 description"
-date = "2017-04-16T22:38:09+02:00"
-menu = "docs"
-+++
+---
+title: "Sample3"
+subtitle: "Sample3 with subtitle"
+description: "Sample3 description"
+date: "2017-04-16T22:38:09+02:00"
+menu: "docs"
+---
 
 ## Velit et ipsum
 

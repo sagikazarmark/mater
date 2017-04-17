@@ -3,32 +3,25 @@
 
 <head>
 {{ block "head" . }}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <base href="{{ .Site.BaseURL }}">
-    <title>{{ block "title" . }}{{ .Title }}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
-    <link rel="canonical" href="{{ .Permalink }}">
-    {{ .Hugo.Generator }}
-    {{ partial "head/description.html" . }}
-    {{ partial "head/author.html" . }}
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" integrity="sha256-xbQIJkhfOw0Dry1H9lawvXRi9XcqdE8jDBZx1Op/mz8=" crossorigin="anonymous">
+    {{ partial "head.html" . }}
 {{ end }}
 </head>
 
 <body>
     {{ block "header" . }}
-    {{ partial "header.html" . }}
+        <header>
+            {{ partial "header.html" . }}
+        </header>
     {{ end }}
 
-    {{ block "main" . }}
-    {{ end }}
+    {{ block "main" . }}{{ end }}
 
     {{ block "footer" . }}
-    {{ partial "footer.html" . }}
+        {{ partial "footer.html" . }}
     {{ end }}
 
-    {{ partial "foot/scripts.html" . }}
+    {{ block "foot" . }}
+        {{ partial "foot/scripts.html" . }}
+    {{ end }}
 </body>
 </html>

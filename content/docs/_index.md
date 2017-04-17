@@ -1,13 +1,15 @@
-+++
-title = "Documentation"
-subtitle = "Lorem ipsum dolor sit amet"
-description = "Mater documentation example"
-date = "2017-04-16T20:16:09+02:00"
-url = "/docs/"
+---
+title: "Documentation"
+subtitle: "Lorem ipsum dolor sit amet"
+description: "Mater documentation example"
+date: "2017-04-16T20:16:09+02:00"
 
-[menu.docs]
-    weight = -200
-+++
+menu:
+    docs:
+        weight: -200
+    main:
+        weight: -220
+---
 
 ## Velit et ipsum
 

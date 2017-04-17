@@ -22,6 +22,11 @@ title = "Mater"
     weight = -200
 
 [[menu.docs]]
+    name = "Home"
+    url = "/"
+    weight = -210
+
+[[menu.docs]]
     name = "Nested"
     identifier = "nested"
     weight = -100

@@ -1,12 +1,13 @@
-+++
-title = "Sample2"
-subtitle = "Sample2 with subtitle"
-description = "Sample2 description"
-date = "2017-04-16T22:11:09+02:00"
+---
+title: "Sample2"
+subtitle: "Sample2 with subtitle"
+description: "Sample2 description"
+date: "2017-04-16T22:11:09+02:00"
 
-[menu.docs]
-    parent = "nested"
-+++
+menu:
+    docs:
+        parent: "nested"
+---
 
 ## Velit et ipsum
 

@@ -1,11 +1,12 @@
-+++
-title = "Sample"
-description = "Sample description"
-date = "2017-04-16T22:09:09+02:00"
+---
+title: "Sample"
+description: "Sample description"
+date: "2017-04-16T22:09:09+02:00"
 
-[menu.docs]
-    weight = -110
-+++
+menu:
+    docs:
+        weight: -110
+---
 
 ## Velit et ipsum
 

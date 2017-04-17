@@ -1,0 +1,11 @@
+{{- if .IsNamedParams -}}
+    <li>
+        <div class="collapsible-header{{ if .Get "active" | default "no" | eq "yes" }} active{{ end }}">{{- with .Get "icon" -}}<i class="material-icons">{{- . -}}</i>{{- end -}}{{- .Get "title" -}}</div>
+        <div class="collapsible-body">{{- .Inner -}}</div>
+    </li>
+{{- else -}}
+<li>
+    <div class="collapsible-header">{{- if len .Params | eq 2 -}}<i class="material-icons">{{- .Get 1 -}}</i>{{- end -}}{{- .Get 0 -}}</div>
+    <div class="collapsible-body">{{- .Inner -}}</div>
+</li>
+{{- end -}}

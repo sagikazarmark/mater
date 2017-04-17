@@ -2,6 +2,8 @@ baseURL = "https://sagikazarmark.github.io/mater/"
 languageCode = "en"
 title = "Mater"
 
+theme = "self"
+
 [params]
     description = "Hugo theme based on Materialize CSS."
     author = "Márk Sági-Kazár"
@@ -29,3 +31,7 @@ title = "Mater"
 [[menu.docs]]
     name = "Templates"
     identifier = "templates"
+
+[[menu.docs]]
+    name = "Shortcodes"
+    identifier = "shortcodes"

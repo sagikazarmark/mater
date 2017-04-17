@@ -1,0 +1,3 @@
+<ul class="collapsible{{ if .Get "popout" | default "no" | eq "yes" }} popout{{ end }}" data-collapsible="accordion">
+    {{- .Inner -}}
+</ul>

@@ -1,0 +1,9 @@
+{{- if .IsNamedParams -}}
+    <div class="card-panel{{ with .Get "color" }} {{ . }}{{ end }}{{ with .Get "class" }} {{ . }}{{ end }}">
+        {{- .Inner -}}
+    </div>
+{{- else -}}
+    <div class="card-panel{{ range .Params }} {{ . }}{{ end }}">
+        {{- .Inner -}}
+    </div>
+{{- end -}}

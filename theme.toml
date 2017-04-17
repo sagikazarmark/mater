@@ -3,9 +3,9 @@
 
 name = "Mater"
 license = "MIT"
-#licenselink = "https://github.com/sagikazarmark/mater/blob/master/LICENSE"
+licenselink = "https://github.com/sagikazarmark/mater/blob/master/LICENSE"
 description = "Hugo theme based on Materialize CSS"
-homepage = "https://sagikazarmark.github.io/mater"
+homepage = "https://sagikazarmark.github.io/mater/"
 tags = []
 features = []
 min_version = "0.20"

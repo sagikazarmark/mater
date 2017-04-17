@@ -1,0 +1,5 @@
+{{- if .IsNamedParams -}}
+    <i class="material-icons{{ with .Get "class" }} {{ . }}{{ end }}">{{- .Get "icon" -}}</i>
+{{- else -}}
+    <i class="material-icons{{ if len .Params | eq 2 }} {{ .Get 1 }}{{ end }}">{{- .Get 0 -}}</i>
+{{- end -}}

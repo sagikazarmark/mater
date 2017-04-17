@@ -1,7 +1,8 @@
-config.toml       export-ignore
-/content/         export-ignore
-.editorconfig     export-ignore
-.gitattributes    export-ignore
-.gitignore        export-ignore
-Makefile          export-ignore
-README.md         export-ignore
+config.toml             export-ignore
+/content/               export-ignore
+.editorconfig           export-ignore
+.gitattributes          export-ignore
+.gitignore              export-ignore
+/layouts/docs/docs.html export-ignore
+Makefile                export-ignore
+README.md               export-ignore

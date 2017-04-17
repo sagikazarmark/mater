@@ -1,7 +1,7 @@
 ---
 title: "Documentation"
-subtitle: "Lorem ipsum dolor sit amet"
-description: "Mater documentation example"
+subtitle: "Self-documentation"
+description: "Mater documentation"
 date: "2017-04-16T20:16:09+02:00"
 
 menu:
@@ -11,11 +11,7 @@ menu:
         weight: -220
 ---
 
-## Velit et ipsum
-
-Sunt enim nulla nostrud in sint ex ut officia. Irure tempor cupidatat velit sint officia exercitation ad enim velit pariatur deserunt sit nisi. Eiusmod irure laboris incididunt reprehenderit consequat cupidatat non occaecat. Reprehenderit duis consequat culpa culpa nisi id pariatur sunt excepteur culpa ea.
-
-Dolor ex eiusmod nostrud elit. Ex ad eiusmod veniam id ut commodo eiusmod excepteur duis duis. Reprehenderit labore id excepteur minim aliqua pariatur exercitation. Do ex dolore esse aliquip sint non Lorem veniam magna sunt ex. Est do eiusmod qui anim reprehenderit veniam laboris aliquip proident exercitation cillum anim do nulla. Consectetur ipsum nisi cillum do.
+This page serves as a self-documentation: it documents Mater Hugo template itself as well as presents the `docs` type.
 
 
 ## Cillum aliquip nostrud ex Lorem eu cillum ut.

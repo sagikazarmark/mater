@@ -27,6 +27,5 @@ title = "Mater"
     weight = -210
 
 [[menu.docs]]
-    name = "Nested"
-    identifier = "nested"
-    weight = -100
+    name = "Templates"
+    identifier = "templates"

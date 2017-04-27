@@ -12,30 +12,30 @@ menu:
 Outputs a material design [icon](http://materializecss.com/icons.html).
 
 
-#### Syntax
+## Syntax
 
 ``` markdown
 {{</* icon favorite */>}}
 ```
 
 
-#### Rendered
+## Rendered
 
 ``` html
 <i class="material-icons">favorite</i>
 ```
 
 
-#### What you see
+## What you see
 
 {{< card-panel >}}
 {{< icon favorite >}}
 {{< /card-panel >}}
 
 
-#### Options
+## Options
 
-##### icon
+### icon
 
 Named parameter achieving the same result as above.
 
@@ -56,7 +56,7 @@ Output: same as above.
 {{< /collapsible >}}
 
 
-##### class
+### class
 
 Add a class to the `i` element.
 

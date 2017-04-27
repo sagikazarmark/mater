@@ -2,14 +2,15 @@ baseURL = "https://sagikazarmark.github.io/mater/"
 languageCode = "en"
 title = "Mater"
 
-theme = "self"
-
 [params]
     description = "Hugo theme based on Materialize CSS."
     author = "Márk Sági-Kazár"
 
     [params.header]
         color = "light-blue lighten-1"
+
+    [params.docs]
+        showTOC = true
 
     [params.docs.header]
         color = "light-blue"

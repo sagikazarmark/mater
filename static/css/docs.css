@@ -1,3 +1,33 @@
+h1 {
+  font-size: 4.2rem;
+  margin: 2.1rem 0 1.68rem 0;
+}
+
+h2 {
+  font-size: 2.28rem;
+  margin: 2.85rem 0 1.14rem 0;
+}
+
+h3 {
+  font-size: 1.96rem;
+  margin: 2.45rem 0 0.98rem 0;
+}
+
+h4 {
+  font-size: 1.64rem;
+  margin: 2.05rem 0 0.82rem 0;
+}
+
+h5 {
+  font-size: 1.32rem;
+  margin: 1.65rem 0 0.66rem 0;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem 0;
+}
+
 header, main, footer {
   padding-left: 300px;
 }
@@ -21,12 +51,17 @@ nav.top-nav {
   padding-bottom: 1rem;
 }
 
-nav.top-nav a.page-title {
-  font-size: 48px;
-  line-height: 122px;
+nav.top-nav h1.page-title {
+  line-height: 170%;
 }
 
-a.button-collapse.top-nav {
+nav.top-nav p.subtitle {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 .912rem 0;
+}
+
+nav.top-nav a.button-collapse {
   position: absolute;
   text-align: center;
   height: 48px;
@@ -40,26 +75,23 @@ a.button-collapse.top-nav {
   z-index: 2;
 }
 
-a.button-collapse.top-nav.full {
+nav.top-nav a.button-collapse.full {
   line-height: 122px;
 }
 
-a.button-collapse.top-nav i {
+nav.top-nav a.button-collapse i {
   font-size: 32px;
 }
 
-@media only screen and (max-width: 600px) {
-  a.button-collapse.top-nav {
-    left: 5%;
+@media only screen and (max-width: 992px) {
+  nav.top-nav {
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  nav .nav-wrapper {
-    text-align: center;
-  }
-  nav .nav-wrapper a.page-title {
-    font-size: 36px;
+@media only screen and (max-width: 600px) {
+  nav.top-nav a.button-collapse {
+    left: 5%;
   }
 }
 
@@ -123,6 +155,49 @@ ul.side-nav.fixed:hover {
   display: inline-block;
   height: 100%;
   pointer-events: none;
+}
+
+.toc-wrapper {
+  margin-top: 2rem;
+  position: relative;
+}
+
+nav#TableOfContents {
+  background-color: initial;
+  box-shadow: initial;
+}
+
+nav#TableOfContents li {
+  line-height: 1.5rem;
+  padding: 2px 0;
+  float: initial;
+}
+
+nav#TableOfContents a {
+  display: inline-block;
+  font-weight: 300;
+  color: #757575;
+  padding-left: 20px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .4;
+}
+
+nav#TableOfContents a:hover {
+  color: #a8a8a8;
+  padding-left: 19px;
+  background-color: initial;
+  border-left: 1px solid;
+}
+
+nav#TableOfContents a.active {
+  font-weight: 500;
+  padding-left: 18px;
+  border-left: 2px solid;
+}
+
+nav#TableOfContents > ul > li > ul > li > ul {
+  display: none;
 }
 
 /*# sourceMappingURL=docs.css.map */

@@ -1,16 +1,32 @@
+@charset "UTF-8";
+
+@import "variables";
+
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 2.28rem !default;
+$h3-fontsize: 1.96rem !default;
+$h4-fontsize: 1.64rem !default;
+$h5-fontsize: 1.32rem !default;
+$h6-fontsize: 1rem !default;
+
+h1 { font-size: $h1-fontsize; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize; margin: ($h2-fontsize * 1.25) 0 ($h2-fontsize / 2) 0;}
+h3 { font-size: $h3-fontsize; margin: ($h3-fontsize * 1.25) 0 ($h3-fontsize / 2) 0;}
+h4 { font-size: $h4-fontsize; margin: ($h4-fontsize * 1.25) 0 ($h4-fontsize / 2) 0;}
+h5 { font-size: $h5-fontsize; margin: ($h5-fontsize * 1.25) 0 ($h5-fontsize / 2) 0;}
+h6 { font-size: $h6-fontsize; margin: ($h6-fontsize * 1.25) 0 ($h6-fontsize / 2) 0;}
+
 header, main, footer {
     padding-left: 300px;
 }
 
-// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L208
-@media only screen and (max-width : 992px) {
+@media #{$medium-and-down} {
     header, main, footer {
         padding-left: 0;
     }
 }
 
-// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L205
-@media only screen and (min-width : 993px) {
+@media #{$large-and-up} {
     .container {
         width: 85%;
     }
@@ -23,48 +39,49 @@ nav.top-nav {
     padding-bottom: 1rem;
 
 
-    a.page-title {
-        font-size: 48px;
-        line-height: 122px;
-    }
-}
-
-a.button-collapse.top-nav {
-    position: absolute;
-    text-align: center;
-    height: 48px;
-    width: 48px;
-    left: 7.5%;
-    top: 0;
-    float: none;
-    margin-left: 1.5rem;
-    color: #fff;
-    font-size: 36px;
-    z-index: 2;
-
-    &.full {
-        line-height: 122px;
+    h1.page-title {
+        line-height: 170%;
     }
 
-    i {
-        font-size: 32px;
+    p.subtitle {
+        font-size: 2.28rem;
+        line-height: 110%;
+        margin: 1.14rem 0 .912rem 0;
     }
-}
 
-// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L207
-@media only screen and (max-width : 600px) {
-    a.button-collapse.top-nav {
-        left: 5%;
-    }
-}
-
-// Based on https://github.com/Dogfalo/materialize/blob/ef69461efcd15d2159c0dadc575e9cd830b47853/sass/components/_variables.scss#L208
-@media only screen and (max-width : 992px) {
-    nav .nav-wrapper {
+    a.button-collapse {
+        position: absolute;
         text-align: center;
+        height: 48px;
+        width: 48px;
+        left: 7.5%;
+        top: 0;
+        float: none;
+        margin-left: 1.5rem;
+        color: #fff;
+        font-size: 36px;
+        z-index: 2;
 
-        a.page-title {
-            font-size: 36px;
+        &.full {
+            line-height: 122px;
+        }
+
+        i {
+            font-size: 32px;
+        }
+    }
+}
+
+@media #{$medium-and-down} {
+    nav.top-nav {
+        text-align: center;
+    }
+}
+
+@media #{$small-and-down} {
+    nav.top-nav {
+        a.button-collapse {
+            left: 5%;
         }
     }
 }
@@ -129,4 +146,47 @@ ul.side-nav.fixed {
     display: inline-block;
     height: 100%;
     pointer-events: none;
+}
+
+.toc-wrapper {
+    margin-top: 2rem;
+    position: relative;
+}
+
+nav#TableOfContents {
+    background-color: initial;
+    box-shadow: initial;
+
+    li {
+        line-height: 1.5rem;
+        padding: 2px 0;
+        float: initial;
+    }
+
+    a {
+        display: inline-block;
+        font-weight: 300;
+        color: #757575;
+        padding-left: 20px;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: .4;
+
+        &:hover {
+            color: lighten(#757575, 20%);
+            padding-left: 19px;
+            background-color: initial;
+            border-left: 1px solid;
+        }
+        &.active {
+            font-weight: 500;
+            padding-left: 18px;
+            border-left: 2px solid;
+        }
+    }
+
+    // Only display h2 elements
+    & > ul > li > ul > li > ul {
+        display: none;
+    }
 }

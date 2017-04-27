@@ -14,7 +14,7 @@ menu:
 This page serves as a self-documentation: it documents Mater Hugo template itself as well as presents the `docs` type.
 
 
-## Cillum aliquip nostrud ex Lorem eu cillum ut.
+## Cillum aliquip
 
 Nisi nostrud qui irure qui eiusmod irure sint voluptate ipsum aute consectetur. Magna Lorem eiusmod aliqua tempor. Aliqua esse anim velit consequat minim aliqua consequat nisi aliqua in. Sit eu dolor laboris anim veniam Lorem dolore labore adipisicing. Veniam fugiat elit cillum ad mollit. Mollit deserunt nisi magna ex velit nisi.
 

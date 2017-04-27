@@ -1,2 +1,19 @@
 {{ partial "foot/scripts.html" . }}
+<script>
+    $(document).ready(function(){
+        $('.page .section h2').scrollSpy();
+
+        // Floating-Fixed table of contents
+        setTimeout(function() {
+            var tocHeight = $('.toc-wrapper').length ? $('.toc-wrapper').height() : 0;
+            var footerOffset = $('body > footer').first().length ? $('body > footer').first().offset().top : 0;
+            var bottomOffset = footerOffset - tocHeight;
+
+            $('.toc-wrapper').pushpin({
+                top: $('nav').height(),
+                bottom: bottomOffset
+            });
+        }, 100);
+    });
+</script>
 {{ partial "docs/foot/custom_scripts.html" . }}

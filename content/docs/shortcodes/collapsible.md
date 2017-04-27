@@ -12,7 +12,7 @@ menu:
 Outputs a material design [collapsible](http://materializecss.com/collapsible.html).
 
 
-#### Syntax
+## Syntax
 
 ``` markdown
 {{</* collapsible */>}}
@@ -28,7 +28,7 @@ Content2
 **Note:** The collapsible item MAY contain additional Markdown, hence the [shortcode with markdown](https://gohugo.io/extras/shortcodes/#shortcodes-with-markdown) syntax.
 
 
-#### Rendered
+## Rendered
 
 ``` html
 <ul class="collapsible" data-collapsible="accordion">
@@ -44,7 +44,7 @@ Content2
 ```
 
 
-#### What you see
+## What you see
 
 {{< card-panel >}}
 {{< collapsible >}}
@@ -58,9 +58,9 @@ Content2
 {{< /card-panel >}}
 
 
-#### Collapsible options
+## Options
 
-##### popout
+### popout
 
 Makes the collapsible a popout collapsible.
 
@@ -116,9 +116,9 @@ Content2
 {{< /collapsible >}}
 
 
-#### Collapsible item options
+## Item options
 
-##### title
+### title
 
 Title of the collapsible item.
 
@@ -162,7 +162,7 @@ Content
 {{< /collapsible >}}
 
 
-##### icon
+### icon
 
 Prepend an icon to the title.
 
@@ -240,7 +240,7 @@ Content
 {{< /collapsible >}}
 
 
-##### active
+### active
 
 Makes the collapsible item active by default.
 

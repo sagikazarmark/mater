@@ -12,7 +12,7 @@ menu:
 Outputs a [card panel](http://materializecss.com/cards.html#panel).
 
 
-#### Syntax
+## Syntax
 
 ``` markdown
 {{</* card-panel */>}}
@@ -21,7 +21,7 @@ Content
 ```
 
 
-#### Rendered
+## Rendered
 
 ``` html
 <div class="card-panel">
@@ -30,7 +30,7 @@ Content
 ```
 
 
-#### What you see
+## What you see
 
 {{< card-panel >}}
 {{< card-panel >}}
@@ -39,9 +39,9 @@ Content
 {{< /card-panel >}}
 
 
-#### Options
+## Options
 
-##### color
+### color
 
 Outputs a colored panel.
 
@@ -74,7 +74,7 @@ Content
 {{< /collapsible >}}
 
 
-##### class
+### class
 
 Add a class to the card panel.
 

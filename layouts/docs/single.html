@@ -19,6 +19,15 @@
                         {{ .Content }}
                     </div>
                 </div>
+                {{ if .Params.ShowTOC | default .Site.Params.Docs.ShowTOC | default false }}
+                    <div class="col hide-on-small-only m3 l2">
+                        <div class="toc-wrapper">
+                            <div style="height: 1px;">
+                                {{ .TableOfContents }}
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
             </div>
         </div>
     </main>
